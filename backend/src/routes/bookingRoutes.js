@@ -1,11 +1,13 @@
+// backend/src/routes/bookingRoutes.js
 const express = require('express');
-const router = express.Router();
-const {getBooking, getBookingById, createBooking, updateBooking, deleteBooking} = require("../../controllers/booking.controller");
+const { createBooking, getBookingById, getBooking, updateBooking, deleteBooking } = require('../controllers/bookingController');
 
-router.get("/", getBooking);
-router.get("/:id", getBookingById);
-router.post("/", createBooking);
-router.put("/:id", updateBooking);
-router.delete("/:id", deleteBooking);
+const router = express.Router();
+
+router.get('/bookings', getBooking);
+router.post('/bookings', createBooking);
+router.get('/bookings/:id', getBookingById);
+router.put('/bookings/:id', updateBooking);
+router.delete('/bookings/:id', deleteBooking);
 
 module.exports = router;
