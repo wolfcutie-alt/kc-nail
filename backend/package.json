@@ -4,7 +4,9 @@
   "description": "backend",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "serve": "nodemon index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/wolfcutie-alt/backend/issues"
   },
-  "homepage": "https://github.com/wolfcutie-alt/backend#readme"
+  "homepage": "https://github.com/wolfcutie-alt/backend#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.3",
+    "path": "^0.12.7",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3"
+  }
 }
