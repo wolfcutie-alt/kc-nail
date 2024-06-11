@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3FFF8;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.phone-navbar {
+  display: none;
+}
+
+.line {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: black;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  list-style: none;
+}
+
+.phone-booking {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url('./assets/hero-img.png');
+  padding: 50px 10%;
+  height: 70vh;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hero-text h1, .hero-text p {
+  margin: 20px;
+}
+
+.hero-btn {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 40px 0;
+}
+
+/* About */
+.aboutUs {
+  display: flex;
+  margin: 5% 5%;
+  justify-content: space-around;
+  background-color: #F3FFF8;
+}
+
+.aboutUs .text-1, .aboutUs .text-2 {
+  width: 50%;
+}
+
+/* Services */
+.services {
+  display: flex;
+  margin: 5% 0;
+  justify-content: space-around;
+  gap: 40px;
+  width: 100%;
+  padding-left: 10%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 0.4fr);
+  gap: 20px;
+}
+
+.serviceCard img {
+  width: 40%;
+  height: 40%;
+}
+
+.serviceCard p {
+  width: 100%;
+}
+
+.services .text {
+  width: 50%;
+  margin-right: 10%;
+}
+
+.serviceCard p {
+  margin-bottom: 10px;
+}
+
+.serviceCard a {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 40px 0;
+}
+
+/* Feedback */
+.feedback img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.feedback {
+  margin-left: 5%;
+}
+
+.feedback p {
+  width: 50%;
+}
+
+.phone-feedback {
+  display: none;
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-evenly;
+  background-image: url("./assets/img-5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  align-items: center;
+  font-size: larger;
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.form input, .form textarea {
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.form textarea {
+  height: 100px;
+}
+
+.timetable {
+  padding: 0 50px;
+}
+
+.timetable ul {
+  list-style: none;
+}
+
+.timetable li {
+  margin: 10px 0;
+}
+
+.address p {
+  margin: 10px 0;
+}
+
+input {
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 40px 0;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.footer .socialLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  list-style: none;
+}
+
+.footer a {
+  color: white;
+}
+
+@media screen and (max-width: 834px) {
+  .services {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .services .text {
+      width: 100%;
+  }
+
+  .grid {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .serviceCard {
+      text-align: center;
+  }
+
+  .serviceCard img {
+      width: 70%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .navbar {
+      display: none;
+  }
+
+  .phone-navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px 20px;
+      width: 100%;
+  }
+
+  .hero {
+      padding: 0px 5%;
+      margin: 0;
+  }
+
+  .aboutUs {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 0px;
+  }
+
+  .aboutUs .text-1, .aboutUs .text-2 {
+      width: 100%;
+      margin: 5% 0px;
+  }
+
+  .services {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0px;
+  }
+
+  .services .text p {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .grid {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .serviceCard img {
+      width: 90%;
+  }
+
+  .serviceCard p {
+      font-size: medium;
+  }
+
+  .feedback {
+      display: none;
+  }
+
+  .phone-feedback {
+      display: inline;
+      margin-bottom: 0;
+  }
+
+  .phone-feedback img{
+      width: 100%;
+      height: 50%;
+  }
+
+  .contact {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+  }
+
+  .contact form input {
+      width: 300px;
+      margin-left: -150%;
+  }
+
+  .contact form textarea {
+      width: 300px;
+      margin-left: -150%;
+  }
+
+  .contact h3 {
+      width: 120px;
+      margin-left: -40%;
+  }
+
+  .timetable li {
+      font-size: smaller;
+  }
+
+  .address p {
+      font-size: smaller;
+  }
+
+  .footer {
+      display: flex;
+      flex-direction: column;
+  }
+}
