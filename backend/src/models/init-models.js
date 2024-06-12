@@ -3,8 +3,6 @@ var _booking = require("./booking");
 
 function initModels(sequelize) {
   var booking = _booking(sequelize, DataTypes);
-
-
   return {
     booking,
   };

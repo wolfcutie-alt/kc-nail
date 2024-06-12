@@ -1,4 +1,4 @@
-const Booking = require("../models/bookingModel");
+const {booking:Booking} = require("../models");
 
 const getBooking = async (req, res) => {
     try {
@@ -25,8 +25,8 @@ const getBookingById = async (req, res) => {
 
 const createBooking = async (req, res) => {
     try {
-        const {bookingID, customerName, dateBooking, bookingDescription} = req.body;
-        const newBooking = await Booking.create({ bookingID, customerName, dateBooking, bookingDescription });
+        const { bookingid, customername, datebooking, bookingdescription} = req.body;
+        const newBooking = await Booking.create({ bookingid, customername, datebooking, bookingdescription });
         res.status(201).json(newBooking);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -35,11 +35,11 @@ const createBooking = async (req, res) => {
 
 const updateBooking = async (req, res) => {
     try {
-        const id = parseInt(req.params.id);
-        const {customerName, dateBooking, bookingDescription} = req.body;
+        const { id } = req.params;
+        const { customername, datebooking, bookingdescription } = req.body;
 
-        const [updated] = await Booking.update({ customerName, dateBooking, bookingDescription }, {
-            where: { id }
+        const [updated] = await Booking.update({ customername, datebooking, bookingdescription }, {
+            where: { bookingid : id }
         });
         if (updated) {
             const updatedBooking = await Booking.findByPk(id);
@@ -56,7 +56,7 @@ const deleteBooking = async (req, res) => {
     try {
         const { id } = req.params;
         const deleted = await Booking.destroy({
-            where: { id }
+            where: { bookingid: id }
         });
 
         if (deleted) {
