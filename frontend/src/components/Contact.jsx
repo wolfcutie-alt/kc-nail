@@ -3,16 +3,6 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className='contact' id='contact'>
-      <form action="" className='form'>
-        <h3>Contact Us</h3>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" required></input>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required></input>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <input type="submit" value="Submit"></input>
-      </form>
       <div className='timetable'>
         <h4>Hours</h4>
         <ul>

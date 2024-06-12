@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className='phone-navbar'>
         <img src={Logo} alt="Logo" />
         <div className='phone-booking'>
-          <a href="">Booking Now</a>
+          <a href="tel:+642102198779">Booking Now</a>
         </div>
       </div>
     </div>
