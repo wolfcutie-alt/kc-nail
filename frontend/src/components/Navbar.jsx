@@ -14,7 +14,7 @@ const Navbar = () => {
             <li><a href="#contact">Contact</a></li>
           </ul>
         <div className='phone-booking'>
-          <a href="">Booking Now</a>
+          <a href="tel:+642102198779">Booking Now</a>
         </div>
       </div>
 
