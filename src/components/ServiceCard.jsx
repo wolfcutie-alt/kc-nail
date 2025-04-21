@@ -10,7 +10,7 @@ const ServiceCard = ({ img, name, description }) => {
       <div className="service-content">
         <h2>{name}</h2>
         <p>{description}</p>
-        <a href="https://www.fresha.com/book-now/house-of-beauty-by-kc-bwx1toq3/all-offer?id=1074678&pId=1018874" className="service-btn">
+        <a href="https://kcbooking.vercel.app/" className="service-btn">
           Book Now <FaArrowRight className="arrow-icon" />
         </a>
       </div>

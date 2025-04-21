@@ -22,45 +22,6 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        <div className="footer-section quick-links">
-          <h3>Quick Links</h3>
-          <div className="footer-links">
-            <a href="#">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#feedback">Feedback</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-
-        <div className="footer-section contact-info">
-          <h3>Contact Info</h3>
-          <div className="contact-details">
-            <p>
-              <FaMapMarkerAlt className="footer-icon" />
-              6/14 Fair Mall, Otara Central, Auckland
-            </p>
-            <p>
-              <FaPhone className="footer-icon" />
-              <a href="tel:+642102198779">021 021 98779</a>
-            </p>
-            <p>
-              <FaEnvelope className="footer-icon" />
-              <a href="mailto:contact@kcnails.com">contact@kcnails.com</a>
-            </p>
-          </div>
-        </div>
-
-        <div className="footer-section opening-hours">
-          <h3>Opening Hours</h3>
-          <ul className="hours-list">
-            <li><span>Mon-Tue:</span> 9:00 am - 6:00 pm</li>
-            <li><span>Wed-Fri:</span> 9:00 am - 7:00 pm</li>
-            <li><span>Saturday:</span> 9:00 am - 6:00 pm</li>
-            <li><span>Sunday:</span> 9:00 am - 2:30 pm</li>
-          </ul>
-        </div>
       </div>
 
       <div className="footer-bottom">

@@ -24,7 +24,7 @@ const Navbar = () => {
         <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
       </ul>
       <div className='phone-booking'>
-        <a href="tel:+642102198779">Book Now</a>
+        <a href="https://kcbooking.vercel.app/" className='hero-btn primary-btn'>Book Now</a>
       </div>
     </nav>
   );

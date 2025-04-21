@@ -94,9 +94,10 @@ img {
 
 .nav-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   list-style: none;
   gap: 2rem;
+  margin-right: 2rem;
 }
 
 .nav-links li a {
@@ -821,6 +822,10 @@ img {
     justify-content: center;
     padding: 2rem;
     transition: var(--transition);
+  }
+  
+  .phone-booking {
+    display: none;
   }
   
   .nav-links.active {
