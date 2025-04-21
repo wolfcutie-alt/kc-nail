@@ -4,6 +4,7 @@ import img_1 from '../assets/img-1.jpg';
 import img_2 from '../assets/img-2.jpg';
 import img_3 from '../assets/img-3.jpg';
 import img_4 from '../assets/img-4.jpg';
+import { FaSpa } from 'react-icons/fa';
 
 const Services = () => {
 
@@ -31,19 +32,30 @@ const Services = () => {
   ]
   return (
     <div className='services' id='services'>
-      <div className='text'>
-        <h1>Our Services</h1>
-        <br />
-        <p>
-        Our skilled and talented team offer a range of nail care and beauty treatments right from our Central Otara Location. Whether you're in need of a classic manicure, a trendy nail art design, or a luxurious spa pedicure, we've got you covered.
-        <br /><br />
-        Not sure what's best for you? Our team is more than happy to have a consult with you to discuss your specific nail needs and preferences. We'll provide personalized recommendations to help you achieve the perfect look and let your inner beauty shine through.
-        </p>
-      </div>
-      <div className='grid'>
-        {services.map((service) => (
-          <ServiceCard img={service.src} name={service.name} description={service.description} />
-        ))}
+      <div className='services-container'>
+        <div className='services-header'>
+          <FaSpa className="services-icon" />
+          <h1>Our Services</h1>
+          <div className="header-underline"></div>
+        </div>
+        <div className='services-intro'>
+          <p>
+            Our skilled and talented team offer a range of nail care and beauty treatments right from our Central Otara Location. Whether you're in need of a classic manicure, a trendy nail art design, or a luxurious spa pedicure, we've got you covered.
+          </p>
+          <p>
+            Not sure what's best for you? Our team is more than happy to have a consult with you to discuss your specific nail needs and preferences. We'll provide personalized recommendations to help you achieve the perfect look and let your inner beauty shine through.
+          </p>
+        </div>
+        <div className='services-grid'>
+          {services.map((service, index) => (
+            <ServiceCard 
+              key={index}
+              img={service.src} 
+              name={service.name} 
+              description={service.description} 
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
